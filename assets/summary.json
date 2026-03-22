@@ -1,0 +1,323 @@
+{
+  "national_averages": {
+    "riesgos": 13.19,
+    "pobreza": 9.78,
+    "indice_san": 7.92,
+    "politicas": 7.21,
+    "ponderacion": 38.07
+  },
+  "departments_in_top50": {
+    "Huehuetenango": 15,
+    "Alta Verapaz": 14,
+    "Quiché": 9,
+    "Chiquimula": 3,
+    "Totonicapán": 3,
+    "Sololá": 2,
+    "San Marcos": 1,
+    "Zacapa": 1,
+    "Izabal": 1,
+    "Quetzaltenango": 1
+  },
+  "top10": [
+    {
+      "ranking": 1,
+      "municipio": "Jocotán",
+      "departamento": "Chiquimula",
+      "ponderacion": 72.255
+    },
+    {
+      "ranking": 2,
+      "municipio": "Camotán",
+      "departamento": "Chiquimula",
+      "ponderacion": 69.981
+    },
+    {
+      "ranking": 3,
+      "municipio": "Panzós",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 67.381
+    },
+    {
+      "ranking": 4,
+      "municipio": "Lanquín",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 65.981
+    },
+    {
+      "ranking": 5,
+      "municipio": "Colotenango",
+      "departamento": "Huehuetenango",
+      "ponderacion": 65.053
+    },
+    {
+      "ranking": 6,
+      "municipio": "San Bartolomé Jocotenango",
+      "departamento": "Quiché",
+      "ponderacion": 63.884
+    },
+    {
+      "ranking": 7,
+      "municipio": "San Juan Atitán",
+      "departamento": "Huehuetenango",
+      "ponderacion": 63.043
+    },
+    {
+      "ranking": 8,
+      "municipio": "San Pedro Jocopilas",
+      "departamento": "Quiché",
+      "ponderacion": 62.628
+    },
+    {
+      "ranking": 9,
+      "municipio": "San Sebastián Huehuetenango",
+      "departamento": "Huehuetenango",
+      "ponderacion": 62.491
+    },
+    {
+      "ranking": 10,
+      "municipio": "Chicamán",
+      "departamento": "Quiché",
+      "ponderacion": 62.34
+    },
+    {
+      "ranking": 11,
+      "municipio": "Santa Cruz Barillas",
+      "departamento": "Huehuetenango",
+      "ponderacion": 60.877
+    },
+    {
+      "ranking": 12,
+      "municipio": "Senahú",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 60.854
+    },
+    {
+      "ranking": 13,
+      "municipio": "Santa Eulalia",
+      "departamento": "Huehuetenango",
+      "ponderacion": 60.751
+    },
+    {
+      "ranking": 14,
+      "municipio": "San Miguel Acatán",
+      "departamento": "Huehuetenango",
+      "ponderacion": 60.169
+    },
+    {
+      "ranking": 15,
+      "municipio": "Santa Lucía La Reforma",
+      "departamento": "Totonicapán",
+      "ponderacion": 60.167
+    },
+    {
+      "ranking": 16,
+      "municipio": "Olopa",
+      "departamento": "Chiquimula",
+      "ponderacion": 59.441
+    },
+    {
+      "ranking": 17,
+      "municipio": "San Miguel Tucurú",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 59.397
+    },
+    {
+      "ranking": 18,
+      "municipio": "Chahal",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 59.178
+    },
+    {
+      "ranking": 19,
+      "municipio": "San Gaspar Ixchil",
+      "departamento": "Huehuetenango",
+      "ponderacion": 59.067
+    },
+    {
+      "ranking": 20,
+      "municipio": "San Juan Ixcoy",
+      "departamento": "Huehuetenango",
+      "ponderacion": 58.725
+    },
+    {
+      "ranking": 21,
+      "municipio": "San Andrés Sajcabajá",
+      "departamento": "Quiché",
+      "ponderacion": 58.717
+    },
+    {
+      "ranking": 22,
+      "municipio": "San Juan Cotzal",
+      "departamento": "Quiché",
+      "ponderacion": 58.148
+    },
+    {
+      "ranking": 23,
+      "municipio": "Santa Bárbara",
+      "departamento": "Huehuetenango",
+      "ponderacion": 58.112
+    },
+    {
+      "ranking": 24,
+      "municipio": "Raxruhá",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 57.558
+    },
+    {
+      "ranking": 25,
+      "municipio": "Santiago Chimaltenango",
+      "departamento": "Huehuetenango",
+      "ponderacion": 57.319
+    },
+    {
+      "ranking": 26,
+      "municipio": "Chajul",
+      "departamento": "Quiché",
+      "ponderacion": 57.216
+    },
+    {
+      "ranking": 27,
+      "municipio": "Santa María Cahabón",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 57.147
+    },
+    {
+      "ranking": 28,
+      "municipio": "Concepción Tutuapa",
+      "departamento": "San Marcos",
+      "ponderacion": 56.971
+    },
+    {
+      "ranking": 29,
+      "municipio": "San Mateo Ixtatán",
+      "departamento": "Huehuetenango",
+      "ponderacion": 56.808
+    },
+    {
+      "ranking": 30,
+      "municipio": "Tectitán",
+      "departamento": "Huehuetenango",
+      "ponderacion": 56.789
+    },
+    {
+      "ranking": 31,
+      "municipio": "San Rafael La Independencia",
+      "departamento": "Huehuetenango",
+      "ponderacion": 56.392
+    },
+    {
+      "ranking": 32,
+      "municipio": "Concepción",
+      "departamento": "Sololá",
+      "ponderacion": 56.378
+    },
+    {
+      "ranking": 33,
+      "municipio": "Santa María Chiquimula",
+      "departamento": "Totonicapán",
+      "ponderacion": 56.151
+    },
+    {
+      "ranking": 34,
+      "municipio": "Cunén",
+      "departamento": "Quiché",
+      "ponderacion": 56.097
+    },
+    {
+      "ranking": 35,
+      "municipio": "Santa Catalina La Tinta",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 56.084
+    },
+    {
+      "ranking": 36,
+      "municipio": "Tamahú",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 55.992
+    },
+    {
+      "ranking": 37,
+      "municipio": "Momostenango",
+      "departamento": "Totonicapán",
+      "ponderacion": 55.838
+    },
+    {
+      "ranking": 38,
+      "municipio": "La Unión",
+      "departamento": "Zacapa",
+      "ponderacion": 55.67
+    },
+    {
+      "ranking": 39,
+      "municipio": "Santa Cruz La Laguna",
+      "departamento": "Sololá",
+      "ponderacion": 55.616
+    },
+    {
+      "ranking": 40,
+      "municipio": "San Cristóbal Verapaz",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 55.318
+    },
+    {
+      "ranking": 41,
+      "municipio": "El Estor",
+      "departamento": "Izabal",
+      "ponderacion": 55.126
+    },
+    {
+      "ranking": 42,
+      "municipio": "San Sebastián Coatán",
+      "departamento": "Huehuetenango",
+      "ponderacion": 54.027
+    },
+    {
+      "ranking": 43,
+      "municipio": "San Pedro Carchá",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 53.964
+    },
+    {
+      "ranking": 44,
+      "municipio": "Huitán",
+      "departamento": "Quetzaltenango",
+      "ponderacion": 53.872
+    },
+    {
+      "ranking": 45,
+      "municipio": "San Juan Chamelco",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 53.872
+    },
+    {
+      "ranking": 46,
+      "municipio": "Fray Bartolomé De Las Casas",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 53.209
+    },
+    {
+      "ranking": 47,
+      "municipio": "San Miguel Uspantán",
+      "departamento": "Quiché",
+      "ponderacion": 52.601
+    },
+    {
+      "ranking": 48,
+      "municipio": "Playa Grande-Ixcán",
+      "departamento": "Quiché",
+      "ponderacion": 52.493
+    },
+    {
+      "ranking": 49,
+      "municipio": "Cobán",
+      "departamento": "Alta Verapaz",
+      "ponderacion": 52.313
+    },
+    {
+      "ranking": 50,
+      "municipio": "Concepción Huista",
+      "departamento": "Huehuetenango",
+      "ponderacion": 52.224
+    }
+  ]
+}
