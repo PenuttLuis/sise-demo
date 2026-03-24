@@ -1,0 +1,89 @@
+INTENT 1: Explain municipality prioritization
+Triggers:
+- "Why is this municipality prioritized?"
+- "Explain this municipality"
+- "Why is it ranked here?"
+- Click on municipality
+
+Response:
+- Return the full structured explanation.
+- Mention the top 2 drivers when they are clearly different from the others.
+- If there is a tie at the top, use the neutral combined summary.
+
+INTENT 2: What does a factor mean?
+Triggers:
+- "What is Riesgos?"
+- "Explain Pobreza"
+- "What does Índice SAN mean?"
+- "What are Políticas?"
+
+Response:
+- Return only the fixed definition of the factor.
+
+Examples:
+Riesgos:
+"Riesgos refleja la vulnerabilidad territorial del municipio frente a amenazas y limitaciones de respuesta."
+
+Pobreza:
+"Pobreza refleja carencias estructurales asociadas a pobreza y necesidades básicas insatisfechas."
+
+Índice SAN:
+"El Índice SAN refleja condiciones relacionadas con la seguridad alimentaria y nutricional."
+
+Políticas:
+"Políticas refleja la presencia del municipio en programas, estrategias o instrumentos de priorización pública, no una condición de vulnerabilidad."
+
+INTENT 3: What is the ranking based on?
+Triggers:
+- "How is the ranking calculated?"
+- "What is ponderación?"
+- "Why this score?"
+
+Response:
+"La ponderación total es la suma de cuatro componentes: Riesgos, Pobreza, Índice SAN y Políticas. Cada uno aporta hasta 25 puntos, para un máximo de 100. El ranking se deriva de esta ponderación total."
+
+INTENT 4: General help
+Triggers:
+- "What is this?"
+- "How does this work?"
+- No municipality selected
+
+Response:
+"Este sistema muestra la priorización municipal basada en factores de vulnerabilidad (Riesgos, Pobreza, Índice SAN) y referencias institucionales (Políticas). Seleccione un municipio o consulte sobre un factor para más detalle."
+
+INTENT 5: Follow-up questions
+Triggers:
+- "Why is Riesgos high?"
+- "Which factor is strongest?"
+- "What are the main drivers?"
+- "Why are Políticas high?"
+
+Response:
+- Reuse the selected municipality context.
+- Answer briefly.
+- Mention the top 1 or top 2 drivers.
+- Do not regenerate the full explanation unless explicitly requested.
+
+INTENT 6: Driver comparison
+Triggers:
+- "What are the top two factors?"
+- "Which factors explain the ranking the most?"
+- "What weighs most here?"
+
+Response:
+- Identify the top 2 factor scores.
+- Explain them using the approved wording.
+- If one of them is Políticas, explicitly clarify that it reflects institutional presence, not vulnerability.
+
+DISPLAY RULES
+- Always show factors in this order:
+  1. Riesgos
+  2. Pobreza
+  3. Índice SAN
+  4. Políticas
+- Always classify each factor as Bajo, Medio, or Alto.
+- The UI may color the level label:
+  - Bajo = green
+  - Medio = yellow
+  - Alto = red
+- Color is supportive only; the meaning must still be explicit in text.

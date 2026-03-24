@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "question": "Why is this municipality prioritized?",
+      "function": "explain_municipality",
+      "required_inputs": ["municipio"],
+      "data_fields": ["ranking", "ponderacion", "riesgos", "pobreza", "indice_san", "politicas"],
+      "answer_style": "short_explanatory",
+      "max_lines": 5
+    },
+    {
+      "id": "Q3",
+      "question": "How does this municipality compare with the departmental average?",
+      "function": "compare_department",
+      "required_inputs": ["municipio"],
+      "data_fields": ["riesgos", "pobreza", "indice_san", "politicas", "ponderacion"],
+      "benchmarks": ["departamental"],
+      "answer_style": "comparative",
+      "max_lines": 5
+    },
+    {
+      "id": "Q4",
+      "question": "How does this municipality compare with the national average?",
+      "function": "compare_national",
+      "required_inputs": ["municipio"],
+      "data_fields": ["riesgos", "pobreza", "indice_san", "politicas", "ponderacion"],
+      "benchmarks": ["nacional"],
+      "answer_style": "comparative",
+      "max_lines": 5
+    },
+    {
+      "id": "Q7",
+      "question": "Which municipalities combine high poverty and high risk?",
+      "function": "filter_combination",
+      "required_inputs": [],
+      "data_fields": ["pobreza", "riesgos"],
+      "answer_style": "filtered_list",
+      "max_items": 5
+    },
+    {
+      "id": "Q9",
+      "question": "What patterns appear among the top municipalities?",
+      "function": "pattern_top10",
+      "required_inputs": [],
+      "data_fields": ["riesgos", "pobreza", "indice_san", "politicas", "ruralidad", "poblacion_indigena", "nbi"],
+      "answer_style": "analytical_summary",
+      "max_lines": 6
+    },
+    {
+      "id": "Q11",
+      "question": "Summarize this municipality in three policy-oriented lines.",
+      "function": "summary_municipality",
+      "required_inputs": ["municipio"],
+      "data_fields": ["ranking", "ponderacion", "riesgos", "pobreza", "indice_san", "politicas", "nbi"],
+      "answer_style": "briefing",
+      "max_lines": 3
+    }
+  ]
+}

@@ -11,58 +11,58 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
- <div class="topbar old-topbar">
-  <div class="container old-topbar-inner">
-    <div class="old-topbar-left">
-      <div class="old-topbar-logo">
-        <img src="assets/logo_gob.png" alt="Gobierno de Guatemala" />
+  <div class="topbar old-topbar">
+    <div class="container old-topbar-inner">
+      <div class="old-topbar-left">
+        <div class="old-topbar-logo">
+          <img src="assets/logo_gob.png" alt="Gobierno de Guatemala" />
+        </div>
+        <div class="old-topbar-text">
+          <p class="old-topbar-kicker">Gobierno de Guatemala</p>
+          <p class="old-topbar-title">Observatorio / Plataforma demostrativa</p>
+        </div>
       </div>
-      <div class="old-topbar-text">
-        <p class="old-topbar-kicker">Gobierno de Guatemala</p>
-        <p class="old-topbar-title">Observatorio / Plataforma demostrativa</p>
+
+      <div class="old-topbar-right">
+        <p class="old-topbar-kicker">SiSE</p>
+        <p class="old-topbar-title">Sistema de Información Social Estratégica</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="landing-hero container">
+    <p class="eyebrow">Observatorio social</p>
+    <h1>Observatorio de Información Social Estratégica</h1>
+    <p class="landing-subtitle">
+      Plataforma demostrativa para visualizar información social prioritaria con enfoque institucional y territorial.
+    </p>
+
+    <div class="landing-stats" id="paneles">
+      <div class="landing-stat-card">
+        <span>Cobertura de municipios</span>
+        <strong id="totalMuni">—</strong>
+      </div>
+      <div class="landing-stat-card">
+        <span>Top priorizados</span>
+        <strong>50</strong>
+      </div>
+      <div class="landing-stat-card">
+        <span>Departamentos en top 50</span>
+        <strong id="totalDept">—</strong>
       </div>
     </div>
 
-    <div class="old-topbar-right">
-      <p class="old-topbar-kicker">Sistema</p>
-      <p class="old-topbar-title">Sistema de Información Social Estratégica</p>
+    <div class="landing-pills">
+      <a href="#priorizacion">Priorización territorial</a>
+      <a href="#perfil">Perfil sociodemográfico</a>
+      <a href="#metodologia">Metodología y fuentes</a>
     </div>
-  </div>
-</div>
+  </section>
 
-<section class="landing-hero container">
-  <p class="eyebrow">Observatorio social</p>
-  <h1>Sistema de Información Social Estratégica</h1>
-  <p class="landing-subtitle">
-    Plataforma demostrativa para visualizar información social prioritaria con claridad institucional y enfoque territorial.
-  </p>
-
-  <div class="landing-stats" id="paneles">
-    <div class="landing-stat-card">
-      <span>Cobertura de municipios</span>
-      <strong id="totalMuni">—</strong>
-    </div>
-    <div class="landing-stat-card">
-      <span>Top priorizados</span>
-      <strong>50</strong>
-    </div>
-    <div class="landing-stat-card">
-      <span>Departamentos en top 50</span>
-      <strong id="totalDept">—</strong>
-    </div>
-  </div>
-
-  <div class="landing-pills">
-    <a href="#priorizacion">Priorización territorial</a>
-    <a href="#perfil">Perfil sociodemográfico</a>
-    <a href="#metodologia">Metodología y fuentes</a>
-  </div>
-</section>
-
-<main class="container">
+  <main class="container">
 
     <section class="section thematic-strip card">
-      <h3>Ejes temáticos futuros</h3>
+      <h3>Ejes temáticos</h3>
       <div class="chip-row">
         <span class="chip active">Priorización municipal</span>
         <span class="chip">Desnutrición</span>
@@ -73,38 +73,84 @@
 
     <section class="section analysis-grid" id="priorizacion">
       <div class="map-card card">
-        <div class="section-heading">
-          <p class="eyebrow">Mapa integrado</p>
-          <h3>Top 50 municipios priorizados</h3>
-          <p class="section-text">Seleccione un municipio en el mapa o en la tabla para desplegar su ficha.</p>
+        <div class="section-heading map-header">
+          <div class="map-header__text">
+            <p class="eyebrow">Mapa integrado</p>
+            <h3>Top 50 municipios priorizados</h3>
+            <p class="section-text">Seleccione un municipio en el mapa o en la tabla para desplegar su ficha.</p>
+          </div>
+          <button id="resetMapBtn" class="btn-reset">Restablecer vista</button>
         </div>
         <div id="map"></div>
       </div>
 
-      <aside class="info-panel card" id="infoPanel">
-        <p class="eyebrow">Ficha municipal</p>
-        <h3>Seleccione un municipio</h3>
-        <p class="section-text">Use el mapa o la tabla para explorar resultados.</p>
-        <div class="ficha-values empty-state">
-          <div><span>Riesgos</span><strong>—</strong></div>
-          <div><span>Pobreza</span><strong>—</strong></div>
-          <div><span>Índice SAN</span><strong>—</strong></div>
-          <div><span>Políticas</span><strong>—</strong></div>
-          <div><span>Ponderación</span><strong>—</strong></div>
+      <div class="side-panel-stack">
+        <aside class="info-panel card" id="infoPanel">
+          <p class="eyebrow">Ficha municipal</p>
+          <h3>Seleccione un municipio</h3>
+          <p class="section-text">Use el mapa o la tabla para explorar resultados.</p>
+          <div class="ficha-values empty-state">
+            <div><span>Riesgos</span><strong>—</strong></div>
+            <div><span>Pobreza</span><strong>—</strong></div>
+            <div><span>Índice SAN</span><strong>—</strong></div>
+            <div><span>Políticas</span><strong>—</strong></div>
+            <div><span>Ponderación</span><strong>—</strong></div>
+          </div>
+          <div class="compare-box empty-state">
+            <p class="compare-title">Comparación de ponderación</p>
+            <div class="compare-row"><span>Departamento</span><strong>—</strong></div>
+            <div class="compare-row"><span>Nacional</span><strong>—</strong></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card ai-panel ai-panel--full" id="aiPanel">
+        <div class="ai-panel__header">
+          <p class="eyebrow">Asistente analítico IA</p>
+          <h3>Consultas basadas en los indicadores del observatorio</h3>
+          <p class="section-text">
+            Respuestas breves, comparativas y orientadas a la toma de decisiones.
+          </p>
         </div>
-        <div class="compare-box empty-state">
-          <p class="compare-title">Comparación de ponderación</p>
-          <div class="compare-row"><span>Departamento</span><strong>—</strong></div>
-          <div class="compare-row"><span>Nacional</span><strong>—</strong></div>
+
+        <div class="ai-context" id="aiContext">
+          Municipio activo: ninguno seleccionado
         </div>
-      </aside>
+
+        <div class="ai-chips" id="aiChips">
+          <button class="ai-chip" data-query="why">¿Por qué está priorizado?</button>
+          <button class="ai-chip" data-query="dept">Comparar con promedio departamental</button>
+          <button class="ai-chip" data-query="summary">Resumen en 3 líneas</button>
+          <button class="ai-chip" data-query="top10">Patrones del top 10</button>
+          <button class="ai-chip" data-query="povertyrisk">Alta pobreza y alto riesgo</button>
+        </div>
+
+        <div class="ai-form">
+          <input
+            id="aiInput"
+            type="text"
+            placeholder="Escriba una consulta analítica sobre municipios, comparaciones o patrones"
+          />
+          <button id="aiAskBtn" class="ai-btn">Consultar</button>
+        </div>
+
+        <div class="ai-status" id="aiStatus"></div>
+
+        <div class="ai-answer" id="aiAnswer">
+          <p class="ai-answer__placeholder">
+            Seleccione un municipio o utilice una consulta sugerida para generar un análisis.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="ranking">
       <div class="section-heading">
         <p class="eyebrow">Resultados</p>
         <h3>Municipios priorizados</h3>
-        <p class="section-text">La tabla muestra los 10 primeros municipios al abrir la página y permite recorrer el resto del top 50 sin desplazamiento horizontal.</p>
+        <p class="section-text">La tabla muestra los 50 municipios priorizados por el Ranking de vulnerabilidades y su Ponderación.</p>
       </div>
       <div class="table-wrap scrollable card">
         <table>
@@ -127,74 +173,140 @@
     </section>
 
     <section class="section profile-grid" id="perfil">
-  <div class="card profile-main">
-    <div class="section-heading">
-      <p class="eyebrow">Perfil sociodemográfico</p>
-      <h3 id="perfilTitle">Guatemala</h3>
+      <div class="card profile-main">
+        <div class="section-heading">
+          <p class="eyebrow">Perfil sociodemográfico</p>
+          <h3 id="perfilTitle">Guatemala</h3>
+        </div>
+        <p class="section-text" id="perfilText">
+          Este módulo complementa la priorización municipal con variables clave de caracterización territorial para contextualizar magnitud poblacional, ruralidad, población indígena y condiciones de bienestar.
+        </p>
+      </div>
+
+      <div class="card profile-side">
+        <h3 id="perfilScope">Referencia nacional</h3>
+        <div class="ficha-values">
+          <div>
+            <span>Población</span>
+            <strong id="perfilPoblacion">—</strong>
+          </div>
+          <div>
+            <span>Población rural</span>
+            <strong id="perfilRural">—</strong>
+          </div>
+          <div>
+            <span>Población indígena</span>
+            <strong id="perfilIndigena">—</strong>
+          </div>
+          <div>
+            <span>Índice de NBI</span>
+            <strong id="perfilNbi">—</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section references card" id="metodologia">
+      <div class="section-heading">
+        <p class="eyebrow">Metodología y fuentes</p>
+        <h3>Base metodológica del demo</h3>
+      </div>
+
+      <p>
+        La demostración presenta una priorización municipal integrada con visualización territorial, ficha municipal y perfil sociodemográfico, para ilustrar cómo SISE puede organizar y comunicar resultados en una sola interfaz.
+      </p>
+
+      <div class="method-grid">
+        <div class="method-card">
+          <h4>Metodología</h4>
+          <ul>
+            <li>Priorización municipal construida a partir de una matriz consolidada de variables estratégicas.</li>
+            <li>Vinculación territorial mediante Código Municipio para su lectura cartográfica.</li>
+            <li>Presentación simplificada con fines demostrativos e institucionales.</li>
+          </ul>
+        </div>
+
+        <div class="method-card">
+          <h4>Fuentes</h4>
+          <div class="source-chips">
+            <span>INE</span>
+            <span>SEGEPLAN</span>
+            <span>MSPAS</span>
+            <span>MINEDUC</span>
+            <span>ESA25</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="institutional-banner">
+    <div class="institutional-banner__container">
+      <div class="institutional-banner__grid">
+
+        <div class="institutional-banner__col">
+          <h3>01. Sobre el observatorio</h3>
+          <div class="institutional-banner__line"></div>
+          <p>
+            Sistema de Información Social Estratégica orientado a visualizar
+            información prioritaria para el análisis territorial, facilitando la
+            identificación de municipios y áreas con mayores niveles de
+            vulnerabilidad social y riesgo.
+          </p>
+        </div>
+
+        <div class="institutional-banner__col">
+          <h3>02. Nota aclaratoria</h3>
+          <div class="institutional-banner__line"></div>
+          <p>
+            La información presentada en esta versión corresponde a una
+            demostración funcional del observatorio. Los contenidos,
+            indicadores, textos institucionales y mecanismos de actualización
+            podrán ser ajustados posteriormente conforme a lineamientos oficiales.
+          </p>
+        </div>
+
+        <div class="institutional-banner__col">
+          <h3>03. Nuestra oficina</h3>
+          <div class="institutional-banner__line"></div>
+
+          <p class="institutional-banner__highlight">Vicepresidencia de la República</p>
+          <p>6ta. Ave. 4-19 Zona 1. Casa Presidencial, Puerta Norte</p>
+          <p>PBX <a href="tel:+50223212121">+502 2321-2121</a></p>
+          <p><a href="mailto:contacto@vicepresidencia.gob.gt">contacto@vicepresidencia.gob.gt</a></p>
+
+          <div class="institutional-banner__subblock">
+            <p class="institutional-banner__highlight">Horario</p>
+            <p>Lunes a Viernes</p>
+            <p>08:00 - 16:00 hrs.</p>
+          </div>
+        </div>
+
+        <div class="institutional-banner__col">
+          <h3>04. Solicitudes de información</h3>
+          <div class="institutional-banner__line"></div>
+
+          <p class="institutional-banner__highlight">
+            Dirección de Informática | Vicepresidencia de la República
+          </p>
+          <p><a href="mailto:informacion@vicepresidencia.gob.gt">informacion@vicepresidencia.gob.gt</a></p>
+
+          <div class="institutional-banner__subblock">
+            <p class="institutional-banner__highlight">Atención institucional</p>
+            <p>
+              Para consultas sobre contenidos, acceso a información pública o
+              funcionamiento general del observatorio, favor comunicarse a los
+              canales institucionales correspondientes.
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <p class="section-text" id="perfilText">
-      Este módulo complementa la priorización municipal con variables clave de caracterización territorial para contextualizar magnitud poblacional, ruralidad, población indígena y condiciones de bienestar.
-    </p>
-  </div>
+  </section>
 
-  <div class="card profile-side">
-    <h3 id="perfilScope">Referencia nacional</h3>
-    <div class="ficha-values">
-      <div>
-        <span>Población</span>
-        <strong id="perfilPoblacion">—</strong>
-      </div>
-      <div>
-        <span>Población rural</span>
-        <strong id="perfilRural">—</strong>
-      </div>
-      <div>
-        <span>Población indígena</span>
-        <strong id="perfilIndigena">—</strong>
-      </div>
-      <div>
-        <span>Índice de NBI</span>
-        <strong id="perfilNbi">—</strong>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section references card" id="metodologia">
-  <div class="section-heading">
-    <p class="eyebrow">Metodología y fuentes</p>
-    <h3>Base metodológica del demo</h3>
-  </div>
-
-  <p>
-    La demostración presenta una priorización municipal integrada con visualización territorial, ficha municipal y perfil sociodemográfico, para ilustrar cómo SISE puede organizar y comunicar resultados en una sola interfaz.
-  </p>
-
-  <div class="method-grid">
-    <div class="method-card">
-      <h4>Metodología</h4>
-      <ul>
-        <li>Priorización municipal construida a partir de una matriz consolidada de variables estratégicas.</li>
-        <li>Vinculación territorial mediante Código Municipio para su lectura cartográfica.</li>
-        <li>Presentación simplificada con fines demostrativos e institucionales.</li>
-      </ul>
-    </div>
-
-    <div class="method-card">
-      <h4>Fuentes</h4>
-      <div class="source-chips">
-        <span>INE</span>
-        <span>SEGEPLAN</span>
-        <span>MSPAS</span>
-        <span>MINEDUC</span>
-        <span>ESA25</span>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="assets/assistant-logic-v1.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
